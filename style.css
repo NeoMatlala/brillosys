@@ -201,14 +201,9 @@ img {
 }
 
 .nav__link,
-.nav__logo,
 .nav__toggle {
   color: var(--text-color);
   font-weight: var(--font-medium);
-}
-
-.nav__logo:hover {
-  color: var(--first-color);
 }
 
 .nav__link {
@@ -223,6 +218,11 @@ img {
   font-size: 1.4rem;
   cursor: pointer;
 }
+
+.nav__logo {
+    width: 40%;
+    /* padding-top: 3rem; */
+  }
 
 /* show menu */
 .show-menu {
@@ -516,6 +516,13 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color);
   margin-top: 3.5rem;
+}
+
+.footer__content ul li{
+
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
 }
 
 /* -------------------- MEDIA QUERIES -------------------------*/
