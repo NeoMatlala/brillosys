@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!--Boxicon-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!--CSS stylesheet-->
     <title>Brillosys | Home</title>
@@ -22,16 +23,23 @@
     <!--HEADER-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a href="#"><img src="images/logo.png" class="nav__logo"></a>
+            <a href="index.html"><img src="images/logo.png" class="nav__logo"></a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#menu" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Us <i class="icon ion-md-arrow-dropdown"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">About Our Company</a></li>
+                            <li><a href="#">Our Partners</a></li>
+                            <li><a href="#">Meet the team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
                     <li class="nav__item"><a href="#menu" class="nav__link">Pricing</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
 
                     <li><i class='bx bx-moon change-theme' id='theme-button'></i></li>
                 </ul>
@@ -154,6 +162,8 @@
                         administrator or if you have a full- time IT staff and are looking to outsource or downsize,
                         BrilloSys Consulting is here to help. </p>
                 </div>
+
+
             </div>
         </section>
 
@@ -209,7 +219,7 @@
     <footer class="footer section bd-container">
         <div class="footer__container bd-grid">
             <div class="footer__content">
-                <a href="#"><img src="images/logo.png" class="footer__logo"></a>
+                <a href="index.html"><img src="images/logo.png" class="footer__logo"></a>
 
                 <div>
                     <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
