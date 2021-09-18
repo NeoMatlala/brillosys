@@ -138,6 +138,7 @@ img {
   color: var(--first-color);
   font-weight: var(--font-medium);
   margin-bottom: 0;
+  font-size: 12px;
 }
 
 .section-sub2 {
@@ -330,7 +331,8 @@ img {
 }
 
 .img-wrap {
-  width: 40%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .card-2 .img-wrap {
@@ -368,14 +370,14 @@ img {
   width: 70%;
 }
 
-.tagline {
-  font-style: italic;
-  font-size: 12px;
+/* -------------------- EXPERTISE -------------------------*/
+.expertise {
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
   text-align: center;
-  padding: 0 1rem;
-  margin-top: 2rem;
 }
-
 /* -------------------- FOOTER -------------------------*/
 .footer__container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

@@ -21,7 +21,7 @@
     </a>
 
     <!--HEADER-->
-    <header class="l-header" id="header">
+    <!-- <header class="l-header" id="header">
         <nav class="nav bd-container">
             <a href="index.html"><img src="images/logo.png" class="nav__logo"></a>
 
@@ -49,7 +49,35 @@
                 <i class="bx bx-menu"></i>
             </div>
         </nav>
-    </header>
+    </header> -->
+
+    <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="bx bx-menu"></i></label>
+          <div class="content">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" class="nav__logo"></a></div>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="#" class="desktop-link">About Us</a>
+                <input type="checkbox" id="show-features">
+                <label for="show-features">About</label>
+                <ul>
+                  <li><a href="company.html">About Our Company</a></li>
+                  <li><a href="partners.html">Our Partners</a></li>
+                  <li><a href="team.html">Meet the team</a></li>
+                </ul>
+              </li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="contact.html">Contact Us</a></li>   
+            </ul>
+          </div>
+        </nav>
+      </div>
 
     <main class="l-main">
         <!--HOME-->
@@ -80,7 +108,7 @@
                         service provider of choice for our every client; by outperforming our direct competition in the
                         quality, efficiency and diversity of the services we offer.</p>
 
-                    <a href="#menu" class="button about-btn">Learn More</a>
+                    <a href="company.html" class="button about-btn">Learn More</a>
                 </div>
 
                 <img src="images/about-landing.png" alt="About image" class='about__img'>

@@ -1,30 +1,30 @@
 /* --------------------- SHOW MENU --------------------- */
-const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId);
-    const nav = document.getElementById(navId);
+// const showMenu = (toggleId, navId) => {
+//     const toggle = document.getElementById(toggleId);
+//     const nav = document.getElementById(navId);
 
-    // check that variables exist
-    if (toggle && nav) {
-        // add show-menu class to the nav-menu
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('show-menu')
-        })
-    }
-}
+//     // check that variables exist
+//     if (toggle && nav) {
+//         // add show-menu class to the nav-menu
+//         toggle.addEventListener('click', () => {
+//             nav.classList.toggle('show-menu')
+//         })
+//     }
+// }
 
-showMenu('nav-toggle', 'nav-menu')
+// showMenu('nav-toggle', 'nav-menu')
 
 
 /* --------------- REMOVE MOBILE MENU --------------------- */
-const navLink = document.querySelectorAll('.nav__link')
+// const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction() {
-    const navMenu = document.getElementById('nav-menu')
-    //remove menu when a link is clicked/selected/touched
-    navMenu.classList.remove('show-menu')
-}
+// function linkAction() {
+//     const navMenu = document.getElementById('nav-menu')
+//     //remove menu when a link is clicked/selected/touched
+//     navMenu.classList.remove('show-menu')
+// }
 
-navLink.forEach(n => n.addEventListener('click', linkAction))
+// navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 
@@ -53,14 +53,14 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /* --------------- CHANGE HEADER/NAV COLOR ON SCROLL ------ */
-function scrollHeader() {
-    const nav = document.getElementById('header')
+// function scrollHeader() {
+//     const nav = document.getElementById('header')
 
-    // add scroll-header class to header tag when the scroll is greater than 200vh
-    if (this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
-}
+//     // add scroll-header class to header tag when the scroll is greater than 200vh
+//     if (this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+// }
 
-window.addEventListener('scroll', scrollHeader)
+// window.addEventListener('scroll', scrollHeader)
 
 
 
@@ -77,37 +77,37 @@ window.addEventListener('scroll', scrollTop)
 
 
 /* ------------------- DARK/LIGHT THEME --------------- */
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'bx-sun'
+// const themeButton = document.getElementById('theme-button')
+// const darkTheme = 'dark-theme'
+// const iconTheme = 'bx-sun'
 
-// save user's theme via local storage
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+// // save user's theme via local storage
+// const selectedTheme = localStorage.getItem('selected-theme')
+// const selectedIcon = localStorage.getItem('selected-icon')
 
-// We get the current theme the interface has, by validating the dark theme class 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
-
-
-// // We check if user previously seleted a theme or not
-if (selectedTheme) {
-    // ask what the issue was to know if we activated or deactivated the dark theme
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
-}
+// // We get the current theme the interface has, by validating the dark theme class 
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+// const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
 
-// activate/ deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
+// // // We check if user previously seleted a theme or not
+// if (selectedTheme) {
+//     // ask what the issue was to know if we activated or deactivated the dark theme
+//     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+//     themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+// }
 
-    // Save the current theme and icon 
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+
+// // activate/ deactivate the theme manually with the button
+// themeButton.addEventListener('click', () => {
+//     // Add or remove the dark / icon theme
+//     document.body.classList.toggle(darkTheme)
+//     themeButton.classList.toggle(iconTheme)
+
+//     // Save the current theme and icon 
+//     localStorage.setItem('selected-theme', getCurrentTheme())
+//     localStorage.setItem('selected-icon', getCurrentIcon())
+// })
 
 
 

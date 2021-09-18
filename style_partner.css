@@ -7,7 +7,7 @@
 
   /* colors */
   --first-color: #118ab2;
-  --first-color-alt: #048654;
+  --first-color-alt: #27a2ca;
   --title-color: #393939;
   --text-color: #333333;
   --text-color-light: #a6a6a6;
@@ -127,6 +127,7 @@ img {
   font-size: var(--h1-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-3);
+  font-weight: bolder;
 }
 
 .about__initial {
@@ -276,29 +277,26 @@ img {
   background-color: var(--first-color);
   border: 2px solid var(--first-color);
   color: #fff;
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
   transition: 0.3s;
-}
-
-.button-outline {
-  border: 2px solid var(--first-color);
-  background-color: #fff;
-  color: var(--text-color);
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  transition: 0.3s;
+  font-size: 10px;
+  margin-top: 0rem;
 }
 
 .button:hover {
   background-color: var(--first-color-alt);
 }
 
-/* -------------------- ABOUT -------------------------*/
+/* -------------------- Current Partners -------------------------*/
 
 /* .about__data {
   text-align: center;
 } */
+
+.ms-img {
+  width: 100%;
+}
 
 .about__description {
   margin-bottom: var(--mb-3);
@@ -325,12 +323,20 @@ img {
   flex-direction: column;
 }
 
-.card-2 {
-  margin-top: 3rem;
+.card-1 {
+  margin-bottom: 5rem;
 }
 
 .img-wrap {
+  width: 70%;
+}
+
+.prospective {
   width: 40%;
+}
+
+.linkedin {
+  width: 25%;
 }
 
 .card-2 .img-wrap {
@@ -374,6 +380,27 @@ img {
   text-align: center;
   padding: 0 1rem;
   margin-top: 2rem;
+}
+
+/* -------------------- Become a Prospective Partners -------------------------*/
+.become {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.become .wrap {
+  padding-top: 0;
+}
+
+.become .text-wrap {
+  padding-top: 0;
+  margin-top: -3rem;
+}
+
+.become .img-wrap {
+  margin-top: 4rem;
+  width: 100%;
+  margin-bottom: -3rem;
 }
 
 /* -------------------- FOOTER -------------------------*/
