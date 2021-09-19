@@ -51,9 +51,10 @@
         </nav>
     </header> -->
 
+    <!--NAV-->
     <div class="wrapper">
         <nav>
-          <input type="checkbox" id="show-search">
+          <!-- <input type="checkbox" id="show-search"> -->
           <input type="checkbox" id="show-menu">
           <label for="show-menu" class="menu-icon"><i class="bx bx-menu"></i></label>
           <div class="content">
@@ -61,9 +62,9 @@
             <ul class="links">
               <li><a href="index.html">Home</a></li>
               <li>
-                <a href="#" class="desktop-link">About Us</a>
+                <a class="desktop-link">About Us</a>
                 <input type="checkbox" id="show-features">
-                <label for="show-features">About</label>
+                <label for="show-features">About Us</label>
                 <ul>
                   <li><a href="company.html">About Our Company</a></li>
                   <li><a href="partners.html">Our Partners</a></li>
@@ -72,7 +73,7 @@
               </li>
               <li><a href="services.html">Services</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
+              <!-- <li><a href="pricing.html">Pricing</a></li> -->
               <li><a href="contact.html">Contact Us</a></li>   
             </ul>
           </div>
@@ -84,11 +85,10 @@
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
-                    <h1 class="home__title">Brilliant <br> Software <br> Development.</h1>
+                    <h1 class="home__title">Creative & Innovative <br> Software <br> Solutions.</h1>
                     <h2 class="home__subtitle">The most optimal, cost-effective <br> and robust solutions.</h2>
 
                     <a href="#about" class="button">Explore</a>
-                    <a href="pricing.html" class="button button-outline">See Pricing</a>
                 </div>
 
                 <img src="images/hero-img.png" alt="home image" class="home__img">
@@ -111,24 +111,22 @@
                     <a href="company.html" class="button about-btn">Learn More</a>
                 </div>
 
-                <img src="images/about-landing.png" alt="About image" class='about__img'>
+                <div class="img-wrap">
+                    <img src="images/about-landing.png" alt="About image" class='about__img'>
+                </div>
             </div>
         </section>
 
         <!--SERVICES-->
         <section class="services section bd-container" id="services">
-            <!-- <span class="section-subtitle">Offering</span> -->
             <h2 class="section-title">Our Services</h2>
-
             <div class="services__container bd-grid">
                 <div class="services__content">
                     <img src="images/card-img-2.png" alt="About image" class='services__img'>
                     <h3 class="services__title">SAP & MS BI Consulting</h3>
-
                     <p class="services__description">BrilloSys provides a full range of services to help you create,
                         deploy, and manage Business Intelligence and Analytics for your organization.</p>
                 </div>
-
                 <div class="services__content">
                     <img src="images/card-2-img.png" alt="About image" class='services__img img-2'>
                     <h3 class="services__title">Mobile Application Development</h3>
@@ -137,7 +135,6 @@
                         actively work to increase our involvement in a new prospective market of software development
                         for pocket, mobile and wireless devices.</p>
                 </div>
-
                 <div class="services__content">
                     <img src="images/card-3-img.png" alt="About image" class='services__img img-2'>
                     <h3 class="services__title">Desktop Applications</h3>
@@ -152,7 +149,6 @@
                         knowledge of most of the computer technologies and languages available and we always keep up to
                         date with the latest developments in this area.</p>
                 </div>
-
                 <div class="services__content">
                     <img src="images/card-5-img.png" alt="About image" class='services__img img-3'>
                     <h3 class="services__title">Custom Software Development</h3>
@@ -160,7 +156,6 @@
                     <p class="services__description">The BrilloSys development team is competent in diverse fields of
                         software development.</p>
                 </div>
-
                 <div class="services__content">
                     <img src="images/card-6-img.png" alt="About image" class='services__img img-2'>
                     <h3 class="services__title">Web Applications Development</h3>
@@ -174,7 +169,6 @@
                     <p class="services__description">Our project managers can successfully plan, oversee and guide
                         virtually any project, no matter how large and challenging, that comes their way.</p>
                 </div>
-
                 <div class="services__content">
                     <img src="images/card-8-img.png" alt="About image" class='services__img img-2'>
                     <h3 class="services__title">Technical Support & Maintenance</h3>
@@ -182,7 +176,6 @@
                     <p class="services__description">We provide technical support to all the applications that we have
                         been involved in development of.</p>
                 </div>
-
                 <div class="services__content">
                     <img src="images/card-9-img.png" alt="About image" class='services__img img-4'>
                     <h3 class="services__title">Internet Solutions Services</h3>
@@ -190,19 +183,16 @@
                         administrator or if you have a full- time IT staff and are looking to outsource or downsize,
                         BrilloSys Consulting is here to help. </p>
                 </div>
-
-
             </div>
         </section>
 
-
-        <!--MENU-->
-        <section class="menu section bd-container" id="menu">
+        <!--Testimonials-->
+        <section class="menu section bd-container testimonials" id="menu">
             <h2 class="section-title">What our clients have to say</h2>
 
             <div class="services__container bd-grid">
                 <div class="services__content test-container">
-                    <img src="images/testimonial-1.png" alt="About image" class='services__img test-img'>
+                    <!-- <img src="images/testimonial-1.png" alt="About image" class='services__img test-img'> -->
                     <h3 class="services__title">Karabo Tlhagwane</h3>
                     <span class="section-subtitle section-sub2">COO, DV8 TECHNOLOGY GROUP</span>
 
@@ -212,7 +202,7 @@
                         for your great service. "</p>
                 </div>
                 <div class="services__content test-container">
-                    <img src="images/test-2.png" alt="About image" class='services__img test-img'>
+                    <!-- <img src="images/test-2.png" alt="About image" class='services__img test-img'> -->
                     <h3 class="services__title">Anele Beke</h3>
                     <span class="section-subtitle section-sub2">CEO, YOUNG ANE PRODUCTIONS</span>
 
@@ -221,7 +211,7 @@
                         with them. Great work! "</p>
                 </div>
                 <div class="services__content test-container">
-                    <img src="images/test-3.png" alt="About image" class='services__img test-img'>
+                    <!-- <img src="images/test-3.png" alt="About image" class='services__img test-img'> -->
                     <h3 class="services__title">Ben Masango Snr</h3>
                     <span class="section-subtitle section-sub2">COO, ARMOUR FOUNDATION</span>
 
@@ -230,7 +220,7 @@
                         its effect on the productivity of its developments in the future. "</p>
                 </div>
                 <div class="services__content test-container">
-                    <img src="images/test-4.png" alt="About image" class='services__img test-img'>
+                    <!-- <img src="images/test-4.png" alt="About image" class='services__img test-img'> -->
                     <h3 class="services__title">Thabo Dube</h3>
                     <span class="section-subtitle section-sub2">CEO, THABO DUBE TECHNOLOGIES</span>
 
@@ -249,7 +239,7 @@
             <div class="footer__content">
                 <a href="index.html"><img src="images/logo.png" class="footer__logo"></a>
 
-                <div>
+                <div class="social">
                     <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
                     <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
                     <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
@@ -261,11 +251,11 @@
             <div class="footer__content">
                 <h3 class="footer__title">Services</h3>
                 <ul>
-                    <li><a href="#" class="footer__link">IT Support & Services</a></li>
-                    <li><a href="#" class="footer__link">Business Intelligence</a></li>
-                    <li><a href="#" class="footer__link">Web Applications Development</a></li>
-                    <li><a href="#" class="footer__link">Other Services</a></li>
-                    <li><a href="#" class="footer__link">Software Development</a></li>
+                    <li><a class="footer__link">IT Support & Services</a></li>
+                    <li><a class="footer__link">Business Intelligence</a></li>
+                    <li><a class="footer__link">Web Applications Development</a></li>
+                    <li><a class="footer__link">Other Services</a></li>
+                    <li><a class="footer__link">Software Development</a></li>
                 </ul>
             </div>
 
@@ -273,15 +263,14 @@
                 <h3 class="footer__title">Contact Us</h3>
                 <ul>
                     <li><i class='bx bx-envelope'></i> info@brillosys.co.za</li>
-                    <li><i class='bx bx-phone-call'></i> +27 84 374 0225</li>
-                    <li><i class='bx bx-phone-call'></i> +27 11 374 0225</li>
-                    <li><i class='bx bx-phone'></i> +27 86 596 9821</li>
+                    <li><i class='bx bx-phone-call'></i> 084 374 0225</li>
+                    <li><i class='bx bx-phone'></i> 0727601650</li>
                     <li><i class='bx bx-location-plus'></i>42 Belvedere Road Glen Austin Midrand</li>
                 </ul>
             </div>
         </div>
 
-        <p class="footer__copy">&#169; 2021 BrilloSys BI consulting | All rights reserved</p>
+        <p class="footer__copy">&#169; 2021 BrilloSys Creative Solutions | All rights reserved</p>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>

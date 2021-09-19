@@ -512,6 +512,31 @@ img {
   .app__container {
     column-gap: 7rem;
   }
+
+  .about__container {
+    width: 100%;
+    grid-template-columns: auto;
+  }
+
+  .about__data {
+    width: 100%;
+  }
+
+  .wrap {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ms-card .img-wrap {
+    width: 60%;
+    margin-top: -4rem;
+  }
+
+  .saas-card .img-wrap {
+    margin-top: -5rem;
+  }
 }
 
 /*---------------------------------------NAVIGATION----------------------------------*/
@@ -768,19 +793,4 @@ nav .content .links {
   .logo {
     padding-right: 0;
   }
-}
-
-.dummy-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  z-index: -1;
-  padding: 0 20px;
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
-.dummy-text h2 {
-  font-size: 45px;
-  margin: 5px 0;
 }
