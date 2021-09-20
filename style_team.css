@@ -777,14 +777,14 @@ a {
 
   .card-1 .img-wrap {
     width: 30%;
-    position: absolute;
-    left: 12%;
+    margin-left: 8rem;
     margin-top: 5rem;
   }
 
   .athi-card .img-wrap {
     width: 60%;
     margin-top: 2rem;
+    margin-left: 4rem;
   }
 
   .footer__container {
@@ -793,9 +793,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .card-1 .img-wrap {
-    left: 23%;
-  }
+  /* .about .wrap .athi-card .img-wrap {
+    margin-left: 15rem;
+  } */
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");

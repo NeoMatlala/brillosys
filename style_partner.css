@@ -572,7 +572,6 @@ img {
   .wrap .card-1 {
     width: 30%;
     align-content: space-between;
-    height: 40vh;
     position: relative;
   }
 
@@ -584,6 +583,11 @@ img {
     height: 45vh;
   }
 
+  .about__data .current .card-1,
+  .about__data .prospective-wrap .card-1 {
+    height: 40vh;
+  }
+
   .wrap .card-1 .about-btn {
     position: absolute;
     bottom: 0;
@@ -593,9 +597,10 @@ img {
     margin: 0 auto;
   }
 
-  .current .card-1 .text-wrap {
+  /* .current .card-1 .text-wrap {
     height: 25vh;
-  }
+    background-color: red;
+  } */
 
   .ms {
     width: 70%;
@@ -664,6 +669,12 @@ img {
   .become .card-1 .about-btn {
     position: relative;
     bottom: 0;
+  }
+
+  .about__data .current .card-1,
+  .about__data .prospective-wrap .card-1 {
+    height: auto;
+    padding-bottom: 3rem;
   }
 }
 
