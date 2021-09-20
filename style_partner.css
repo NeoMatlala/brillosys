@@ -501,49 +501,32 @@ img {
     padding-top: 8rem;
   }
 
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
-  .nav__list {
-    display: flex;
-  }
-  .nav__item {
-    margin-left: var(--mb-5);
-    margin-bottom: 0;
-  }
-  .nav__toggle {
-    display: none;
+  .about__container,
+  .become {
+    grid-template-columns: auto;
+    width: 80%;
+    margin: 0 auto;
   }
 
-  .change-theme {
-    position: initial;
-    margin-left: 5rem;
-    font-size: 1.5rem;
+  .become {
+    margin-top: 0;
+    padding-top: 2rem;
   }
 
-  .home__container {
-    height: 100vh;
-    justify-items: center;
+  .ms {
+    width: 70%;
   }
 
-  .services__container,
-  .menu__container {
-    margin-top: var(--mb-6);
+  .ms-img {
+    width: 70%;
   }
 
-  .menu__container {
-    grid-template-columns: repeat(3, 210px);
-    column-gap: 4rem;
-  }
-  .menu__content {
-    padding: 1.5rem;
-  }
-  .menu__img {
-    width: 130px;
+  footer {
+    margin-top: 3rem;
   }
 
-  .app__store {
-    margin: 0 var(--mb-1) 0 0;
+  .footer__logo {
+    width: 35%;
   }
 }
 
@@ -580,11 +563,30 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border-radius: 10px;
+    margin-bottom: 3rem;
   }
 
   .wrap .card-1 {
     width: 30%;
     align-content: space-between;
+    height: 40vh;
+    position: relative;
+  }
+
+  .p-h {
+    margin-bottom: -2rem;
+  }
+
+  .prospective-wrap .card-1 {
+    height: 45vh;
+  }
+
+  .wrap .card-1 .about-btn {
+    position: absolute;
+    bottom: 0;
   }
 
   .wrap .card-1 .img-wrap {
@@ -599,12 +601,8 @@ img {
     width: 70%;
   }
 
-  .prospective-wrap .card-1 {
-    height: 50vh;
-  }
-
   .prospective-wrap .card-1 .iis {
-    margin-top: -2.5rem;
+    margin-top: -1rem;
   }
 
   .iis-card .card-desc {
@@ -615,8 +613,10 @@ img {
     margin-bottom: 3rem;
   }
 
-  .become {
+  .become .wrap {
     padding-top: 0;
+    box-shadow: none;
+    background-color: transparent;
   }
 
   .become h2 {
@@ -625,6 +625,7 @@ img {
 
   .become .card-1 {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     width: 100%;
   }
@@ -639,10 +640,30 @@ img {
     margin-bottom: 2rem;
   }
 
+  .become .img-wrap img {
+    width: 100%;
+    height: auto;
+  }
+
   .become .img-wrap {
     margin-top: 4rem;
     width: 50%;
     margin-bottom: -3rem;
+  }
+
+  .footer__container {
+    padding-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrap .card-1 {
+    height: 30vh;
+  }
+
+  .become .card-1 .about-btn {
+    position: relative;
+    bottom: 0;
   }
 }
 

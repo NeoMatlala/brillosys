@@ -626,6 +626,26 @@ nav .content .links {
     padding-top: 8rem;
   }
 
+  .card-desc {
+    font-size: 16px;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+  }
+
+  .services__container .test-container {
+    height: auto;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
+
   .footer__logo {
     width: 35%;
   }

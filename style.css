@@ -491,7 +491,6 @@ a {
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  border: 2px solid var(--first-color);
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
@@ -499,7 +498,6 @@ a {
 }
 
 .button-outline {
-  border: 2px solid var(--first-color);
   background-color: #fff;
   color: var(--text-color);
   padding: 0.75rem 1rem;
@@ -512,6 +510,10 @@ a {
 }
 
 /* -------------------- ABOUT -------------------------*/
+#about {
+  margin-top: 3rem;
+}
+
 .about__data {
   text-align: center;
 }
@@ -519,6 +521,8 @@ a {
 .about__description {
   margin-bottom: var(--mb-3);
   text-align: justify;
+  width: 100%;
+  padding-right: 2rem;
 }
 
 .about__container .img-wrap {
@@ -545,6 +549,7 @@ a {
   box-shadow: 0 2px 4px rgba(114, 114, 114, 0.15);
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .services__img {
@@ -719,8 +724,9 @@ a {
   }
 
   .home__container {
-    height: 80vh;
+    height: 50vh;
     justify-items: center;
+    padding-bottom: 0;
   }
 
   .home__container h1 {
@@ -733,15 +739,24 @@ a {
     margin-top: var(--mb-6);
   }
 
-  .menu__container {
-    grid-template-columns: repeat(3, 210px);
-    column-gap: 4rem;
+  .services .services__content {
+    height: auto;
   }
-  .menu__content {
-    padding: 1.5rem;
+
+  .menu .services__content {
+    height: auto;
   }
-  .menu__img {
-    width: 130px;
+
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+  }
+
+  .services__container .test-container {
+    height: auto;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
   }
 
   footer {
@@ -782,6 +797,7 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 4rem;
+    padding-top: 5rem;
   }
 
   .about__container .img-wrap {
