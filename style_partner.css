@@ -458,11 +458,22 @@ img {
 /* -------------------- MEDIA QUERIES -------------------------*/
 /*these will be applied for screens larger than 576px*/
 @media screen and (min-width: 576px) {
-  .home__container,
+  /* .home__container,
   .about__container,
   .app__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  } */
+
+  .about__container .wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about__container .wrap .card-1 {
+    width: 80%;
   }
 
   .about__data,
