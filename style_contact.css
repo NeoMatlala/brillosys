@@ -333,7 +333,19 @@ textarea {
 .wrap h4 {
   margin-bottom: -0.5rem;
 }
+
 /* -------------------- FOOTER -------------------------*/
+.footer {
+  /* background-color: var(--first-color); */
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #3cbfeb;
+  color: #fff;
+}
+
 .footer__container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
@@ -353,18 +365,21 @@ textarea {
 .footer__social {
   font-size: 1.5rem;
   color: var(--title-color);
+  color: #fff;
   margin-right: var(--mb-2);
 }
 
 .footer__title {
   font-size: var(--h2-font-size);
   color: var(--title-color);
+  color: #fff;
   margin-bottom: var(--mb-2);
 }
 
 .footer__link {
   display: inline-block;
   color: var(--text-color);
+  color: #fff;
   margin-bottom: var(--mb-1);
 }
 
@@ -376,6 +391,7 @@ textarea {
   text-align: center;
   font-size: var(--small-font-size);
   color: var(--text-color);
+  color: #fff;
   margin-top: 3.5rem;
 }
 
@@ -511,6 +527,7 @@ textarea {
 
   .footer__container {
     padding-top: 0rem;
+    margin-top: 0;
   }
 }
 
@@ -657,6 +674,10 @@ nav .content .links {
 }
 .content .links ul li:hover ul {
   top: 0;
+}
+
+.content .links li a.active-link {
+  color: var(--first-color);
 }
 
 /* Responsive code start */
